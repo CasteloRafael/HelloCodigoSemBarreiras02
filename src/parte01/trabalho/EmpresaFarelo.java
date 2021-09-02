@@ -23,7 +23,20 @@ public class EmpresaFarelo {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bem vindo ao programa para consultar o saldo do cartao Farelo");
+        System.out.println("=============================================================");
 
+        System.out.println("Digite os valores do saldo de cada beneficio que serão usados:");
+
+        System.out.println("Digite o saldo do vale alimentação:");
+        saldoAlimentacao = scanner.nextDouble();
+
+        System.out.println("Digite o saldo do vale transporte:");
+        saldoTransporte = scanner.nextDouble();
+
+        System.out.println("Digite o saldo do vale refeição:");
+        saldoRefeicao = scanner.nextDouble();
+
+        System.out.println("=============================================================");
 
         while (iniciarPrograma) {
             System.out.println("Deseja lançar seus gastos? Digite 'S' para sim e 'N' para não e encerrar o programa");
@@ -34,17 +47,6 @@ public class EmpresaFarelo {
             }
 
             else if (executarPrograma == 'S' || executarPrograma == 's'){
-
-                System.out.println("Digite os valores do saldo de cada beneficio que serão usados:");
-
-                System.out.println("Digite o saldo do vale alimentação:");
-                saldoAlimentacao = scanner.nextDouble();
-
-                System.out.println("Digite o saldo do vale transporte:");
-                saldoTransporte = scanner.nextDouble();
-
-                System.out.println("Digite o saldo do vale refeição:");
-                saldoRefeicao = scanner.nextDouble();
 
 
                 System.out.println("Escolha qual transação deseja fazer:");
@@ -92,6 +94,9 @@ public class EmpresaFarelo {
                 System.out.println("Seu saldo do cartao alimentacao é = " + saldoAlimentacao);
                 System.out.println("Seu saldo do cartao refeição é = " + saldoRefeicao);
                 System.out.println("Seu saldo do cartao transporte é = " + saldoTransporte);
+                System.out.println("=============================================================");
+                System.out.println("Seu saldo total é:" + (saldoAlimentacao + saldoRefeicao + saldoTransporte));
+                System.out.println("=============================================================");
 
 
 
